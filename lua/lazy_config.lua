@@ -1,3 +1,3 @@
 return {
-  install = { colorscheme = { "everforest" } },
+	install = { colorscheme = { "everforest" } },
 }

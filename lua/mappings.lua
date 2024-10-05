@@ -12,5 +12,5 @@ map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "nvimtree focus window"
 
 -- format
 map("n", "<leader>fm", function()
-  require("conform").format()
+	require("conform").format()
 end)

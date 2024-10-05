@@ -1,7 +1,6 @@
-require "options"
-require "mappings"
-require "commands"
-
+require("options")
+require("mappings")
+require("commands")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
@@ -18,8 +17,8 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-local plugins = require "plugins"
+local plugins = require("plugins")
 
-require("lazy").setup(plugins, require "lazy_config")
+require("lazy").setup(plugins, require("lazy_config"))
 
 vim.cmd([[colorscheme everforest]])
