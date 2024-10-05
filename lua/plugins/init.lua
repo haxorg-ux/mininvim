@@ -47,6 +47,13 @@ return {
 		end,
 	},
 
+	{
+		"NvChad/nvterm",
+		config = function()
+			require("plugins.configs.nvterm")
+		end,
+	},
+
 	-- we use cmp plugin only when in insert mode
 	-- so lets lazyload it at InsertEnter event, to know all the events check h-events
 	-- completion , now all of these plugins are dependent on cmp, we load them after cmp
@@ -95,7 +102,17 @@ return {
 		"williamboman/mason.nvim",
 		build = ":MasonUpdate",
 		cmd = { "Mason", "MasonInstall" },
-		opts = {},
+		opts = {
+			ui = {
+				icons = {
+					package_pending = " ",
+					package_installed = " ",
+					package_uninstalled = " ",
+				},
+			},
+
+			max_concurrent_installers = 10,
+		},
 	},
 
 	{
