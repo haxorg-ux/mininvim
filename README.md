@@ -32,7 +32,7 @@ Run `:MasonInstallAll` command after lazy.nvim finishes downloading plugins
 # Reset
 ```bash
 rm -rf ~/.local/share/nvim && rm -rf ~/.config/nvim/lazy-lock.json
-
+```
 # Dir structure
 ```bash
 ├── init.lua
