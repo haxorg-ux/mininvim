@@ -55,6 +55,7 @@ lspconfig.lua_ls.setup({
 })
 
 -- setup multiple servers with same default options
+-- add pyright
 local servers = { "html", "cssls" }
 
 for _, lsp in ipairs(servers) do
